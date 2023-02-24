@@ -4,7 +4,8 @@
              x:Class="TestFinalizer.SecondPage"
              Title="SecondPage">
     <VerticalStackLayout>
-        <Label 
+        <Label
+            x:Name="lblInstances"
             Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />

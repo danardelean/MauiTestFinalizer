@@ -9,7 +9,12 @@ public partial class SecondPage : ContentPage
         pageInstances++;
         Console.WriteLine($"{pageInstances} instances of SecondPage still in memory");
     }
- 
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+        lblInstances.Text = $"{pageInstances} instances of SecondPage still in memory";
+    }
+
     ~SecondPage()
     {
         pageInstances--;
